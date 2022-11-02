@@ -8,10 +8,6 @@ public class pz_3_1 {
     public static void main(String[] args) {
         int[] a = new int[3];
         int[] b = new int[3];
-        String sd = "| Бали за 100-бальною шкалою    |  Оцінка за шкалою ЄКТС|Оцінка за національною шкалою|\n";
-        System.out.println(sd.length());
-        String m = "F";
-        System.out.println(m.hashCode());
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the numbers for a array");
         for (int i = 0; i < 3; i++) {

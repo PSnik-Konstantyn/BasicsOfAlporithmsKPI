@@ -3,14 +3,12 @@ package dz;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class pz_3_2 {
+public class pz_3_3 {
 
     public static void main(String[] args) {
 
-        int a = (int) (Math.random()*10+1);
-        if (a % 2 == 0 && a != 0) {
-            a = checkA();
-        }
+
+        int a = checkA();
         System.out.println(a + " array size");
         int[] nums = new int[a];
 
@@ -21,24 +19,18 @@ public class pz_3_2 {
         System.out.println("Our matrix");
         System.out.println(Arrays.toString(nums));
 
-        int answer = maxTripl(nums);
+        int answer = countEvens(nums);
         System.out.println("Result "+answer);
     }
 
-    private static int maxTripl(int[] nums) {
-        int size = nums.length;
-        int answer;
-        int first = nums[0];
-        int middle = nums[(size-1)/2];
-        int last = nums[size-1];
-        if (first >= middle && first >= last) {
-            answer = first;
-        } else if (middle >= first && middle >= last) {
-            answer = middle;
-        } else {
-            answer = last;
+    private static int countEvens(int[] nums) {
+        int counter = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0){
+                counter++;
+            }
         }
-        return answer;
+        return counter;
     }
 
     private static int checkA() {
@@ -51,4 +43,5 @@ public class pz_3_2 {
 
         return newA;
     }
+
 }

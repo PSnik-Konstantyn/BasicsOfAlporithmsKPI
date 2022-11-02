@@ -15,7 +15,7 @@ public class Lr1 {
         Double R = calcR(m, t, c);
         Double S = calcS(m, b, t, c);
 
-        System.out.printf("Значення R =  %5.4f \nЗначення S =  %5.4s \n", R, S);
+        System.out.printf("Значення R =  %5.4f \nЗначення S =  %5.4f \n", R, S);
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введіть нові значення для розрахунків");
