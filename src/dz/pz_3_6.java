@@ -11,7 +11,8 @@ public class pz_3_6 {
 
         System.out.println("Please enter matrix size");
         int n = scanner.nextInt();
-        if (n <= 0) {
+
+        while (n <= 0){
             n = checkN();
         }
 
@@ -50,12 +51,6 @@ public class pz_3_6 {
 
     private static int checkN() {
         System.out.println("Please enter n>0");
-        int newN = scanner.nextInt();
-        if (newN >= 0) {
-            return newN;
-        } else {
-            checkN();
-        }
-        return newN;
+        return scanner.nextInt();
     }
 }

@@ -18,6 +18,7 @@ public class pz_4_1 {
             System.out.println(Arrays.toString(nums));
 
             int [] answer = bubbleSort(nums);
+
             System.out.print("[");
             for (int j = 0; j <= answer.length - 1; j++ ) {
                 System.out.print(answer[j]);
@@ -26,6 +27,7 @@ public class pz_4_1 {
                 }
             }
             System.out.println("]");
+
             isProgress(answer);
             isProgress(test1);
         }

@@ -3,7 +3,7 @@ package dz;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class pz_3_7 {
+public class pz_3_7_to_do {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
