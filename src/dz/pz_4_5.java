@@ -3,8 +3,8 @@ package dz;
 public class pz_4_5 {
     public static void main(String[] args) {
 
-        int n = 4;
-        int m = 4;
+        int n = 5;
+        int m = 6;
         int[][] a = strangeMatrix(n, m);
         for (int j = 0; j < n; j++) {
             System.out.print("[");
