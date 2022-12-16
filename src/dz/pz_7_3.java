@@ -13,7 +13,6 @@ public class pz_7_3 {
         int counter = 0;
         for (int i = 0; i < array.length; i++) {
             if(i != array.length-1 && array[i] == array[i+1]){
-
                 int h = 1;
                     while (array[i+h-1] == array[i+h]){
                         h++;
